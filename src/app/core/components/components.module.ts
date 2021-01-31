@@ -3,18 +3,18 @@ import { RouterModule } from '@angular/router';
 
 import { AngularMaterialModule } from '../modules/angular-material.module';
 
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
-    NavBarComponent
+    HeaderComponent
   ],
   imports: [
     RouterModule,
     AngularMaterialModule
   ],
   exports: [
-    NavBarComponent
+    HeaderComponent
   ]
 })
 export class ComponentsModule { }
