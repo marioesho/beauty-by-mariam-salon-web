@@ -1,8 +1,19 @@
 @import '/src/styles/variables';
 
-mat-toolbar {
+.logo {
+  width: 265px;
+  height: auto;
+}
+
+.mat-toolbar {
   position: fixed;
   height: $header-height;
+  padding: 0 80px;
+  letter-spacing: 3px;
+}
+
+.mat-toolbar .mat-button {
+  font-size: 12px;
 }
 
 .nav-spacer {
