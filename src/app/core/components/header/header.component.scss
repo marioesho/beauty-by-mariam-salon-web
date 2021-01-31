@@ -1,6 +1,8 @@
+@import '/src/styles/variables';
+
 mat-toolbar {
   position: fixed;
-  z-index: 1;
+  height: $header-height;
 }
 
 .nav-spacer {
