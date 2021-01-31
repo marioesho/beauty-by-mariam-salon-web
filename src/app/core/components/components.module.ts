@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AngularMaterialModule } from '../modules/angular-material.module';
 
@@ -9,6 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     NavBarComponent
   ],
   imports: [
+    RouterModule,
     AngularMaterialModule
   ],
   exports: [
