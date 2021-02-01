@@ -2,29 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { AngularMaterialModule } from '../modules/angular-material.module';
-import { SparkAngularModule } from '../modules/spark-angular.module';
-
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent,
-    IconsComponent
+    FooterComponent
   ],
   imports: [
     CommonModule,
-    RouterModule,
-    AngularMaterialModule,
-    SparkAngularModule
+    RouterModule
   ],
   exports: [
     HeaderComponent,
-    FooterComponent,
-    IconsComponent
+    FooterComponent
   ]
 })
 export class ComponentsModule { }

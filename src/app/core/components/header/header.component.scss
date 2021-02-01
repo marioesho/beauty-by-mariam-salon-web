@@ -1,22 +1,4 @@
-@import '/src/styles/variables';
-
 .logo {
   width: 265px;
   height: auto;
-}
-
-.mat-toolbar {
-  position: fixed;
-  height: $header-height;
-  padding: 0 80px;
-  letter-spacing: 3px;
-  z-index: 1;
-}
-
-.mat-toolbar .mat-button {
-  font-size: 12px;
-}
-
-.nav-spacer {
-  flex: 1 1 auto;
 }
