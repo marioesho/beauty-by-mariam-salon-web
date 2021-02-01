@@ -1,8 +1,29 @@
-<mat-toolbar>
-  <a routerLink="/">
-    <img src="../../../../assets/logo/logo-transparent-black.png" alt="logo" class="logo" />
-  </a>
-  <span class="nav-spacer"></span>
-  <a mat-button routerLink="/">HOME</a>
-  <a mat-button routerLink="/contact">CONTACT</a>
-</mat-toolbar>
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-sm navbar-light blue-grey lighten-5 fixed-top" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand>
+    <a class="navbar-brand" routerLink="/">
+      <img src="../../../../assets/logo/logo-transparent-black.png" alt="logo" width="265" />
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/" mdbWavesEffect>HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" routerLink="/contact" mdbWavesEffect>CONTACT</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->

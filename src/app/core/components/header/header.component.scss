@@ -1,4 +1,14 @@
-.logo {
-  width: 265px;
-  height: auto;
+@import '/src/styles/variables';
+
+:host ::ng-deep {
+  .navbar {
+    height: $header-height;
+    padding: 0 80px;
+  }
+
+  .nav-link {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
 }
