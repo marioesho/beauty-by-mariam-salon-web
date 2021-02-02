@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HoursComponent } from './hours/hours.component';
 import { LocationComponent } from './location/location.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
+import { ParallaxComponent } from './parallax/parallax.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     FooterComponent,
     HoursComponent,
     LocationComponent,
-    SocialLinksComponent
+    SocialLinksComponent,
+    ParallaxComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     FooterComponent,
     HoursComponent,
     LocationComponent,
-    SocialLinksComponent
+    SocialLinksComponent,
+    ParallaxComponent
   ]
 })
 export class ComponentsModule { }
