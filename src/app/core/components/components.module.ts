@@ -6,11 +6,15 @@ import { MdbBootstrapModule } from '../modules/mdb-bootstrap.module';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HoursComponent } from './hours/hours.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HoursComponent,
+    LocationComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +23,9 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HoursComponent,
+    LocationComponent
   ]
 })
 export class ComponentsModule { }

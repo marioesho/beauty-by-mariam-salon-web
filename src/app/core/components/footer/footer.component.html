@@ -10,17 +10,8 @@
       <!-- Grid column -->
       <div class="col-xl-3 col-md-5 mx-auto">
 
-        <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Hours</h5>
-
-        <table mdbTable [borderless]="true" [small]="true" class="table-responsive d-inline white-text">
-          <tbody>
-            <tr mdbTableCol *ngFor="let hour of hours">
-              <td class="pt-0 pl-0">{{hour.key}}</td>
-              <td class="pt-0 pr-0 text-right">{{hour.value}}</td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- Hours -->
+        <app-hours additionalClasses="table-responsive d-inline white-text"></app-hours>
 
       </div>
       <!-- Grid column -->
@@ -30,12 +21,8 @@
       <!-- Grid column -->
       <div class="col-xl-3 col-md-5 mx-auto">
 
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Location</h5>
-
-        <p>
-          31160 Orchard Lake Rd<br>Farmington Hills, MI 48334
-        </p>
+        <!-- Location -->
+        <app-location></app-location>
 
       </div>
       <!-- Grid column -->
