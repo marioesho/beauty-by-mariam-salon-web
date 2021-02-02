@@ -1,23 +1,94 @@
-<div class="footer">
-  <sprk-stack itemSpacing="huge">
-    <sprk-stack sprkStackItem itemSpacing="medium" additionalClasses="sprk-o-Stack--split@xxs">
-      <sprk-icon sprkStackItem iconType="facebook" additionalClasses="sprk-c-Icon--xl"></sprk-icon>
-      <sprk-icon sprkStackItem iconType="instagram" additionalClasses="sprk-c-Icon--xl"></sprk-icon>
-    </sprk-stack>
-    <sprk-stack sprkStackItem splitAt="medium" itemSpacing="huge">
-      <table sprkStackItem>
-        <h2>HOURS</h2>
-        <tr *ngFor="let hour of hours">
-          <td class="sprk-u-prl">{{hour.key}}</td>
-          <td>{{hour.value}}</td>
-        </tr>
-      </table>
-      <table sprkStackItem>
-        <h2>LOCATION</h2>
-        <tr>
-          <td>31160 Orchard Lake Rd<br>Farmington Hills, MI 48334</td>
-        </tr>
-      </table>
-    </sprk-stack>
-  </sprk-stack>
-</div>
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="footer-grid-container container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-xl-3 col-md-5 mx-auto">
+
+        <!-- Hours -->
+        <app-hours additionalClasses="table-responsive d-inline white-text"></app-hours>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-xl-3 col-md-5 mx-auto">
+
+        <!-- Location -->
+        <app-location></app-location>
+
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" mdbBtn color="danger" [rounded]="true" mdbWavesEffect>Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="fb-ic">
+        <mdb-icon fab icon="facebook" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="tw-ic">
+        <mdb-icon fab icon="twitter" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="gplus-ic">
+        <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="li-ic">
+        <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="ins-ic">
+        <mdb-icon fab icon="instagram" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="pin-ic">
+        <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-2"></mdb-icon>
+    </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->

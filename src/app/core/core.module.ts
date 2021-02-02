@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 
-import { AngularMaterialModule } from './modules/angular-material.module';
-import { SparkAngularModule } from './modules/spark-angular.module';
+import { MdbBootstrapModule } from './modules/mdb-bootstrap.module';
 import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   imports: [
-    AngularMaterialModule,
-    SparkAngularModule,
+    MdbBootstrapModule,
     ComponentsModule
   ],
   exports: [
+    MdbBootstrapModule,
     ComponentsModule
   ]
 })

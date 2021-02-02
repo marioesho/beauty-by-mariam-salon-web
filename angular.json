@@ -35,12 +35,18 @@
             ],
             "styles": [
               "src/styles/styles.scss",
-              "node_modules/jarallax/dist/jarallax.css"
+              "node_modules/jarallax/dist/jarallax.css",
+              "node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
+              "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss"
             ],
             "scripts": [
               "node_modules/jarallax/dist/jarallax.min.js",
-               "node_modules/jarallax/dist/jarallax-element.min.js",
-               "node_modules/jarallax/dist/jarallax-video.min.js"
+              "node_modules/jarallax/dist/jarallax-element.min.js",
+              "node_modules/jarallax/dist/jarallax-video.min.js"
             ]
           },
           "configurations": {

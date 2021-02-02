@@ -1,0 +1,10 @@
+<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Hours</h5>
+
+<table mdbTable [borderless]="true" [small]="true" [class]="additionalClasses">
+  <tbody>
+    <tr mdbTableCol *ngFor="let hour of hours">
+      <td class="pt-0 pl-0">{{hour.key}}</td>
+      <td class="pt-0 pr-0 text-right">{{hour.value}}</td>
+    </tr>
+  </tbody>
+</table>

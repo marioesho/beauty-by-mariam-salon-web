@@ -2,29 +2,30 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { AngularMaterialModule } from '../modules/angular-material.module';
-import { SparkAngularModule } from '../modules/spark-angular.module';
+import { MdbBootstrapModule } from '../modules/mdb-bootstrap.module';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { IconsComponent } from './icons/icons.component';
+import { HoursComponent } from './hours/hours.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    IconsComponent
+    HoursComponent,
+    LocationComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    AngularMaterialModule,
-    SparkAngularModule
+    MdbBootstrapModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    IconsComponent
+    HoursComponent,
+    LocationComponent
   ]
 })
 export class ComponentsModule { }
