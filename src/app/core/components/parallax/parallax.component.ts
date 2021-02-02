@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./parallax.component.scss']
 })
 export class ParallaxComponent implements OnInit {
+  @Input() pageTitle!: string;
   @Input() imageUrl!: string;
   @Input() height = 850;
 
