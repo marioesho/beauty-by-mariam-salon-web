@@ -8,13 +8,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HoursComponent } from './hours/hours.component';
 import { LocationComponent } from './location/location.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     HoursComponent,
-    LocationComponent
+    LocationComponent,
+    SocialLinksComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { LocationComponent } from './location/location.component';
     HeaderComponent,
     FooterComponent,
     HoursComponent,
-    LocationComponent
+    LocationComponent,
+    SocialLinksComponent
   ]
 })
 export class ComponentsModule { }

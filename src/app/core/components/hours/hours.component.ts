@@ -16,7 +16,7 @@ export class HoursComponent implements OnInit {
     { key: 'Sunday', value: 'Closed' }
   ];
 
-  @Input() additionalClasses?: string;
+  @Input() additionalClasses = '';
 
   constructor() { }
 
