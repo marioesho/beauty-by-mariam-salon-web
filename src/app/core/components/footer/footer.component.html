@@ -1,31 +1,107 @@
-<!-- <div class="container">
-  <div class="row">
-    <div class="col">
-      <sprk-icon iconType="facebook" additionalClasses="sprk-c-Icon--xl"></sprk-icon>
-    </div>
-    <div class="col">
-      <sprk-icon iconType="instagram" additionalClasses="sprk-c-Icon--xl"></sprk-icon>
-    </div>
-  </div>
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
 
-  <div class="row">
-    <div class="col">
-      <table>
-        <h2>HOURS</h2>
-        <tr *ngFor="let hour of hours">
-          <td class="sprk-u-prl">{{hour.key}}</td>
-          <td>{{hour.value}}</td>
-        </tr>
-      </table>
+  <!-- Footer Links -->
+  <div class="footer-grid-container container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-xl-3 col-md-5 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Hours</h5>
+
+        <table mdbTable [borderless]="true" [small]="true" class="table-responsive d-inline white-text">
+          <tbody>
+            <tr mdbTableCol *ngFor="let hour of hours">
+              <td class="pt-0 pl-0">{{hour.key}}</td>
+              <td class="pt-0 pr-0 text-right">{{hour.value}}</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-xl-3 col-md-5 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Location</h5>
+
+        <p>
+          31160 Orchard Lake Rd<br>Farmington Hills, MI 48334
+        </p>
+
+      </div>
+      <!-- Grid column -->
     </div>
-    <div class="col">
-      <table>
-        <h2>LOCATION</h2>
-        <tr>
-          <td>31160 Orchard Lake Rd<br>Farmington Hills, MI 48334</td>
-        </tr>
-      </table>
-    </div>
+    <!-- Grid row -->
+
   </div>
-</div>
- -->
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" mdbBtn color="danger" [rounded]="true" mdbWavesEffect>Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="fb-ic">
+        <mdb-icon fab icon="facebook" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="tw-ic">
+        <mdb-icon fab icon="twitter" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="gplus-ic">
+        <mdb-icon fab fab icon="google-plus" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="li-ic">
+        <mdb-icon fab icon="linkedin" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="ins-ic">
+        <mdb-icon fab icon="instagram" size="2x" class="white-text mr-2"></mdb-icon>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="pin-ic">
+        <mdb-icon fab icon="pinterest" size="2x" class="white-text mr-2"></mdb-icon>
+    </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
