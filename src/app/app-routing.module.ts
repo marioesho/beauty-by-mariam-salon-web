@@ -9,21 +9,25 @@ import { ArtistDetailComponent } from './artists/artist-detail/artist-detail.com
 import { ContactComponent } from './contact/contact.component';
 
 // Guards
-import { ArtistDetailGuard } from './core/guards/artist-detail.guard';
+import { GuardsModule } from './core/modules/guards.module';
+import { ArtistDetailResolver } from './artists/artist-detail/artist-detail.resolver';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'services', component: SalonServicesComponent },
   { path: 'artists', children: [
       { path: '', component: ArtistsComponent, pathMatch: 'full' },
-      { path: 'artist-detail/:artist', component: ArtistDetailComponent, canActivate: [ArtistDetailGuard] }
+      { path: 'artist-detail', component: ArtistDetailComponent, resolve: [ArtistDetailResolver] }
     ]
   },
   { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    GuardsModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

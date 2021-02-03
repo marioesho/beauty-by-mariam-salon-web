@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-artist-detail',
@@ -8,10 +7,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ArtistDetailComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit(): void {
-    console.log(this.route.snapshot.params.artist);
+    console.log(history.state.data);
   }
 
 }
