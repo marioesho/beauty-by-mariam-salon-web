@@ -10,6 +10,7 @@ export class ArtistDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(history.state.data);
   }
 
 }
