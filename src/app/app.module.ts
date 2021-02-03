@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SalonServicesComponent } from './salon-services/salon-services.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArtistDetailComponent } from './artists/artist-detail/artist-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     SalonServicesComponent,
     ArtistsComponent,
+    ArtistDetailComponent,
     ContactComponent
   ],
   imports: [
