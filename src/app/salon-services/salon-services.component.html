@@ -17,6 +17,9 @@
       <app-list heading="Texture" [listItems]="textureServices"></app-list>
     </div>
   </div>
+  <div class="row">
+    <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+  </div>
 </div>
 
 <app-parallax pageTitle="Hair Services" imageUrl="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg"></app-parallax>
@@ -38,4 +41,14 @@
       <app-list heading="Texture" [listItems]="textureServices"></app-list>
     </div>
   </div>
+  <div class="row">
+    <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+  </div>
 </div>
+
+<ng-template #cancelTerms>
+  <p class="text-center">
+    WE APPRECIATE 24 HOUR NOTICE FOR CANCELING APPOINTMENTS. IF APPOINTMENT IS CANCELED LESS THAN 24 HOURS IN ADVANCE,
+    WE WILL CHARGE 50% OF THE SCHEDULED SERVICE TOTAL. ALL SERVICES OVER $150 REQUIRE A CREDIT CARD NUMBER.
+  </p>
+</ng-template>
