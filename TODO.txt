@@ -1,1 +1,2 @@
 - Make logo responsive
+- fix hours on large screen
