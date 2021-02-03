@@ -2,7 +2,10 @@
 
 <div class="row" *ngFor="let listItem of listItems">
   <div class="col-8">
-    <p>{{ listItem.key }}</p>
+    <p>
+      {{ listItem.key }}
+      <small *ngIf="listItem.description" class="text-muted"><br><em>{{ listItem.description }}</em></small>
+    </p>
   </div>
   <div class="col-4">
     <p>{{ listItem.value }}</p>

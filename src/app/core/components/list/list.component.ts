@@ -1,5 +1,6 @@
-import { KeyValue } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+
+import { ListItem } from '../../models/list-item';
 
 @Component({
   selector: 'app-list',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
   @Input() heading!: string;
-  @Input() listItems!: KeyValue<string, string>[];
+  @Input() listItems!: ListItem[];
 
   constructor() { }
 
