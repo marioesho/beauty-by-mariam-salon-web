@@ -1,1 +1,31 @@
-<p>artist-detail works!</p>
+<div class="container">
+  <hr>
+  <div class="row text-center">
+    <div class="col-7">
+      <img [src]="artist.imageUrl" class="img-thumbnail">
+    </div>
+    <div class="col-5">
+      <div class="row mb-2">
+        <div class="col">
+          <h4>{{ artist.name }}</h4>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <p>{{ artist.skills }}</p>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col mx-auto">
+          <app-social-links [socialLinks]="artist.socialLinks" [hasContainer]="true"></app-social-links>
+        </div>
+      </div>
+      <div class="row" *ngIf="artist.quote">
+        <div class="col">
+          <p class="quote">“{{ artist.quote }}”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>

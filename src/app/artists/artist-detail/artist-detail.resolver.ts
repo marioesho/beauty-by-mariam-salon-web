@@ -1,11 +1,24 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/router';
+import {
+  Resolve,
+  Router,
+  ActivatedRouteSnapshot
+} from '@angular/router';
+
+import { Artist, Artists } from '../artists';
 
 @Injectable()
-export class ArtistDetailResolver implements Resolve<any> {
-  constructor() {}
+export class ArtistDetailResolver implements Resolve<Artist | void> {
+  constructor(private router: Router) { }
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
-    return false;
+  resolve(route: ActivatedRouteSnapshot): Artist | void {
+    if (route.params.artist) {
+      const artist = Artists.get(route.params.artist);
+      if (artist) {
+        return artist;
+      }
+    }
+
+    this.router.navigateByUrl('/artists');
   }
 }

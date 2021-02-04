@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { Artist } from '../artists';
 
 @Component({
   selector: 'app-artist-detail',
@@ -6,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./artist-detail.component.scss']
 })
 export class ArtistDetailComponent implements OnInit {
+  public artist!: Artist;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(history.state.data);
+    window.scroll(0, 0);
+    this.artist = this.route.snapshot.data[0] as Artist;
   }
 
 }

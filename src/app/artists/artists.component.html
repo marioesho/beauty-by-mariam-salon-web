@@ -1,8 +1,8 @@
 <app-parallax pageTitle="Artists" imageUrl="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg"></app-parallax>
 
-<div class="container my-5 font--Montserrat">
+<div class="container my-5">
   <div class="row mb-3">
-    <div class="col-12">
+    <div class="col">
       <h1>Muse is defined as the source of inspiration for a creative artist.</h1>
       <p>
         All of our artists have endured extensive training and are extremely passionate. But it is their source of inspiration that makes the ultimate salon and spa experience possible, each and every day.
@@ -13,44 +13,15 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
+    <div class="col">
       <h4>Stylists</h4>
       <div class="d-flex align-content-start flex-wrap text-center">
-        <div>
-          <a routerLink='artist-detail' [state]="{ data: 'Test data'}">
-            <img src="../../assets/images/artist-1.jpg" class="img-thumbnail artist-image">
+        <div *ngFor="let artist of artists | keyvalue">
+          <a [routerLink]="['artist-detail', artist.key]">
+            <img [src]="artist.value.imageUrl" class="img-thumbnail artist-image">
           </a>
-          <p>Bailey</p>
+          <p>{{ artist.value.name }}</p>
         </div>
-        <div>
-          <img src="../../assets/images/artist-2.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-        <div>
-          <img src="../../assets/images/artist-3.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-        <div>
-          <img src="../../assets/images/artist-4.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-        <div>
-          <img src="../../assets/images/artist-5.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-        <div>
-          <img src="../../assets/images/artist-6.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-        <div>
-          <img src="../../assets/images/artist-7.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-        <div>
-          <img src="../../assets/images/artist-8.jpg" class="img-thumbnail artist-image">
-          <p>Bailey</p>
-        </div>
-      </div>
     </div>
   </div>
 </div>
