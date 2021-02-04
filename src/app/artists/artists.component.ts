@@ -17,7 +17,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -27,7 +28,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -37,7 +39,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -47,7 +50,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -57,7 +61,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -67,7 +72,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -77,7 +83,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -87,7 +94,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -97,7 +105,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     },
     {
       imageUrl: '../../assets/images/artist-1.jpg',
@@ -107,7 +116,8 @@ export class ArtistsComponent implements OnInit {
       socialMedia: {
         facebook: 'https://www.facebook.com/Beautybymariam1',
         instagram: 'https://www.instagram.com/beautybymariamsalon/?hl=en'
-      } as SocialMedia
+      } as SocialMedia,
+      quote: 'I\'m a boss ass bitch!'
     }
   ];
 
