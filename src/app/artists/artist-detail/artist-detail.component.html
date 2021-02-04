@@ -1,10 +1,10 @@
 <div class="container">
   <hr>
   <div class="row text-center">
-    <div class="col-7">
+    <div class="col-xl-7 mb-5 mb-xl-0">
       <img [src]="artist.imageUrl" class="img-thumbnail">
     </div>
-    <div class="col-5">
+    <div class="col-xl-5">
       <div class="row mb-2">
         <div class="col">
           <h4>{{ artist.name }}</h4>
@@ -15,8 +15,8 @@
           <p>{{ artist.skills }}</p>
         </div>
       </div>
-      <div class="row mb-5">
-        <div class="col mx-auto">
+      <div class="row justify-content-center mb-5">
+        <div class="col col-md-9 col-lg-7 col-xl-12">
           <app-social-links [socialLinks]="artist.socialLinks" [hasContainer]="true"></app-social-links>
         </div>
       </div>

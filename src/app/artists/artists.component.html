@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col">
       <h4>Stylists</h4>
-      <div class="d-flex align-content-start flex-wrap text-center">
+      <div class="d-flex justify-content-center flex-wrap text-center">
         <div *ngFor="let artist of artists | keyvalue">
           <a [routerLink]="['artist-detail', artist.key]">
             <img [src]="artist.value.imageUrl" class="img-thumbnail artist-image">
