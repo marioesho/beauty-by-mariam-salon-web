@@ -1,3 +1,3 @@
 - Make logo responsive
 - large screen breaks hours and pictures
-- add route gaurd to artist detail when no data passed
+- no page found guard

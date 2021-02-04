@@ -2,15 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Components
-import { HomeComponent } from './home/home.component';
-import { SalonServicesComponent } from './salon-services/salon-services.component';
-import { ArtistsComponent } from './artists/artists.component';
-import { ArtistDetailComponent } from './artists/artist-detail/artist-detail.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from '../../home/home.component';
+import { SalonServicesComponent } from '../../salon-services/salon-services.component';
+import { ArtistsComponent } from '../../artists/artists.component';
+import { ArtistDetailComponent } from '../../artists/artist-detail/artist-detail.component';
+import { ContactComponent } from '../../contact/contact.component';
 
 // Guards
-import { GuardsModule } from './core/modules/guards.module';
-import { ArtistDetailResolver } from './artists/artist-detail/artist-detail.resolver';
+import { ArtistDetailResolver } from '../../artists/artist-detail/artist-detail.resolver';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,8 +24,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
-    GuardsModule
+    RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
 })
