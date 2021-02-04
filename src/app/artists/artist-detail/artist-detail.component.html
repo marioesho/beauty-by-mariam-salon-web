@@ -1,1 +1,31 @@
-<p>artist-detail works!</p>
+<div class="container">
+  <hr>
+  <div class="row text-center">
+    <div class="col-7">
+      <img [src]="artist.imageUrl" class="img-thumbnail">
+    </div>
+    <div class="col-5">
+      <div class="row">
+        <div class="col">
+          <h4>{{ artist.name }}</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>{{ artist.skills }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+
+        </div>
+      </div>
+      <div class="row" *ngIf="artist.quote">
+        <div class="col">
+          <p>{{ artist.quote }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
