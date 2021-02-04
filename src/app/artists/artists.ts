@@ -4,7 +4,7 @@ export class Artist {
   public imageUrl!: string;
   public name!: string;
   public skills!: string;
-  public socialMedia?: SocialLinks;
+  public socialLinks?: SocialLinks;
   public quote?: string;
 }
 
@@ -15,7 +15,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Mariam Yelda',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -28,7 +28,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Bailey',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -41,7 +41,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Carter',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -54,7 +54,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Gabrielle',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -67,7 +67,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Heather',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -80,7 +80,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Holly',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -93,7 +93,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Hollyanne',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -106,7 +106,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Jade',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -119,7 +119,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Jashley',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,
@@ -132,7 +132,7 @@ export const Artists: Map<string, Artist> = new Map([
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Javaneh',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialMedia: {
+      socialLinks: {
         facebook: {link: 'https://www.facebook.com/Beautybymariam1', description: 'Mariam Yelda'} as SocialMedia,
         instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en', description: 'Mariam Yelda'} as SocialMedia
       } as SocialLinks,

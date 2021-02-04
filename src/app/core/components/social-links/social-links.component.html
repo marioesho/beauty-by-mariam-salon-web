@@ -1,32 +1,44 @@
-<ul class="list-unstyled list-inline text-center" [ngClass]="hasContainer ? 'social-links-container' : ''">
-  <li class="list-inline-item">
-    <a class="fb-ic">
-      <mdb-icon fab icon="facebook" size="2x" class="mr-2" [class]="additionalClasses"></mdb-icon>
+<ul *ngIf="socialLinks" class="list-unstyled list-inline text-center" [ngClass]="hasContainer ? 'social-links-container' : ''">
+  <li class="list-inline-item" *ngIf="socialLinks.facebook">
+    <a [href]="socialLinks.facebook.link">
+      <mdb-icon fab icon="facebook" size="2x" [class]="additionalClasses"></mdb-icon>
+      <br>
+      <span class="social-links-description">{{ socialLinks.facebook.description }}</span>
     </a>
   </li>
-  <li class="list-inline-item">
-    <a class="tw-ic">
-      <mdb-icon fab icon="twitter" size="2x" class="mr-2"></mdb-icon>
+  <li class="list-inline-item" *ngIf="socialLinks.twitter">
+    <a [href]="socialLinks.twitter.link">
+      <mdb-icon fab icon="twitter" size="2x" [class]="additionalClasses"></mdb-icon>
+      <br>
+      <span class="social-links-description">{{ socialLinks.twitter.description }}</span>
     </a>
   </li>
-  <li class="list-inline-item">
-    <a class="gplus-ic">
-      <mdb-icon fab fab icon="google-plus" size="2x" class="mr-2"></mdb-icon>
+  <li class="list-inline-item" *ngIf="socialLinks.googlePlus">
+    <a [href]="socialLinks.googlePlus.link">
+      <mdb-icon fab icon="google-plus" size="2x" [class]="additionalClasses"></mdb-icon>
+      <br>
+      <span class="social-links-description">{{ socialLinks.googlePlus.description }}</span>
     </a>
   </li>
-  <li class="list-inline-item">
-    <a class="li-ic">
-      <mdb-icon fab icon="linkedin" size="2x" class="mr-2"></mdb-icon>
+  <li class="list-inline-item" *ngIf="socialLinks.linkedIn">
+    <a [href]="socialLinks.linkedIn.link">
+      <mdb-icon fab icon="linkedin" size="2x" [class]="additionalClasses"></mdb-icon>
+      <br>
+      <span class="social-links-description">{{ socialLinks.linkedIn.description }}</span>
     </a>
   </li>
-  <li class="list-inline-item">
-    <a class="ins-ic">
-      <mdb-icon fab icon="instagram" size="2x" class="mr-2"></mdb-icon>
+  <li class="list-inline-item" *ngIf="socialLinks.instagram">
+    <a [href]="socialLinks.instagram.link">
+      <mdb-icon fab icon="instagram" size="2x" [class]="additionalClasses"></mdb-icon>
+      <br>
+      <span class="social-links-description">{{ socialLinks.instagram.description }}</span>
     </a>
   </li>
-  <li class="list-inline-item">
-    <a class="pin-ic">
-      <mdb-icon fab icon="pinterest" size="2x" class="mr-2"></mdb-icon>
+  <li class="list-inline-item" *ngIf="socialLinks.pinterest">
+    <a [href]="socialLinks.pinterest.link">
+      <mdb-icon fab icon="pinterest" size="2x" [class]="additionalClasses"></mdb-icon>
+      <br>
+      <span class="social-links-description">{{ socialLinks.pinterest.description }}</span>
   </a>
   </li>
 </ul>

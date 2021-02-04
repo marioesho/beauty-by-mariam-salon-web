@@ -17,7 +17,7 @@
       </div>
       <div class="row mb-5">
         <div class="col mx-auto">
-          <app-social-links [hasContainer]="true"></app-social-links>
+          <app-social-links [socialLinks]="artist.socialLinks" [hasContainer]="true"></app-social-links>
         </div>
       </div>
       <div class="row" *ngIf="artist.quote">

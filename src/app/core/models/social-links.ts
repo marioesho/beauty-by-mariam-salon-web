@@ -11,3 +11,12 @@ export class SocialMedia {
   public link!: string;
   public description?: string;
 }
+
+export const DefaultSocialLinks: SocialLinks = {
+  facebook: {link: ''},
+  twitter: {link: ''},
+  googlePlus: {link: ''},
+  linkedIn: {link: ''},
+  instagram: {link: ''},
+  pinterest: {link: ''},
+};
