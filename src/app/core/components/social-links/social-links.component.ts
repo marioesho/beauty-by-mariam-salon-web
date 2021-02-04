@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SocialLinksComponent implements OnInit {
   @Input() additionalClasses = '';
+  @Input() hasContainer = false;
 
   constructor() { }
 
