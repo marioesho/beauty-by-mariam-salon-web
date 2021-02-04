@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'services', component: SalonServicesComponent },
   { path: 'artists', children: [
       { path: '', component: ArtistsComponent, pathMatch: 'full' },
-      { path: 'artist-detail', component: ArtistDetailComponent, resolve: [ArtistDetailResolver] }
+      { path: 'artist-detail/:artist', component: ArtistDetailComponent, resolve: [ArtistDetailResolver] }
     ]
   },
   { path: 'contact', component: ContactComponent }
