@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Artist, Artists } from './artists';
 
 @Component({
@@ -7,7 +8,7 @@ import { Artist, Artists } from './artists';
   styleUrls: ['./artists.component.scss']
 })
 export class ArtistsComponent implements OnInit {
-  public artists: Artist[] = Artists;
+  public artists: Map<string, Artist> = Artists;
 
   constructor() { }
 
