@@ -6,9 +6,7 @@ import {
 } from '@angular/router';
 import { Observable, of } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ArtistDetailResolver implements Resolve<boolean> {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
     return of(true);
