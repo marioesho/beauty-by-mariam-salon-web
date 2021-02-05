@@ -1,13 +1,7 @@
-@import '/src/styles/variables';
-
 :host ::ng-deep {
-  .navbar {
-    height: $navbar-height;
-    padding: 0 80px;
-  }
-
   .nav-link {
     font-size: 12px;
     letter-spacing: 3px;
+    text-transform: uppercase;
   }
 }

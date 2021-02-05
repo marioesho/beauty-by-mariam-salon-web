@@ -4,13 +4,23 @@ html, body {
   height: 100%;
 }
 
-p {
-  font-family: 'Montserrat', sans-serif;
+.nav-padding {
+  padding-top: 100px;
 }
 
-h4 {
+.container--Montserrat h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.container--Montserrat h4 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+}
+
+.container--Montserrat p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .quote {

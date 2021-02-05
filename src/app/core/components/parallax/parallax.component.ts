@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ParallaxComponent implements OnInit {
   @Input() pageTitle!: string;
   @Input() imageUrl!: string;
-  @Input() height = 850;
 
   constructor() { }
 
