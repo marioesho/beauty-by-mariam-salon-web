@@ -1,3 +1,2 @@
-- Make logo responsive
 - large screen breaks hours and pictures
 - no page found guard
