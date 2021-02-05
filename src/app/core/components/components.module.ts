@@ -11,6 +11,7 @@ import { LocationComponent } from './location/location.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { ParallaxComponent } from './parallax/parallax.component';
 import { ListComponent } from './list/list.component';
+import { PathNotFoundComponent } from './path-not-found/path-not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListComponent } from './list/list.component';
     LocationComponent,
     SocialLinksComponent,
     ParallaxComponent,
-    ListComponent
+    ListComponent,
+    PathNotFoundComponent
   ],
   imports: [
     CommonModule,
