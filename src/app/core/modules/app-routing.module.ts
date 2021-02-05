@@ -11,15 +11,18 @@ import { ContactComponent } from '../../contact/contact.component';
 // Guards
 import { ArtistDetailResolver } from '../../artists/artist-detail/artist-detail.resolver';
 
+// Models
+import { RouterPath } from '../models/router-paths';
+
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'services', component: SalonServicesComponent },
-  { path: 'artists', children: [
+  { path: RouterPath.home, component: HomeComponent },
+  { path: RouterPath.services, component: SalonServicesComponent },
+  { path: RouterPath.artists, children: [
       { path: '', component: ArtistsComponent, pathMatch: 'full' },
-      { path: 'artist-detail/:artist', component: ArtistDetailComponent, resolve: [ArtistDetailResolver] }
+      { path: `${RouterPath.artistDetail}/:artist`, component: ArtistDetailComponent, resolve: [ArtistDetailResolver] }
     ]
   },
-  { path: 'contact', component: ContactComponent }
+  { path: RouterPath.contact, component: ContactComponent }
 ];
 
 @NgModule({

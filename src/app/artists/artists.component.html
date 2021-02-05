@@ -17,7 +17,7 @@
       <h4>Stylists</h4>
       <div class="d-flex justify-content-center flex-wrap text-center">
         <div *ngFor="let artist of artists | keyvalue">
-          <a [routerLink]="['artist-detail', artist.key]">
+          <a [routerLink]="[routerPath.artistDetail, artist.key]">
             <img [src]="artist.value.imageUrl" class="img-thumbnail artist-image">
           </a>
           <p>{{ artist.value.name }}</p>

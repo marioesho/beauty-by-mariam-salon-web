@@ -4,6 +4,7 @@ import {
   Router,
   ActivatedRouteSnapshot
 } from '@angular/router';
+import { RouterPath } from 'src/app/core/models/router-paths';
 
 import { Artist, Artists } from '../artists';
 
@@ -19,6 +20,6 @@ export class ArtistDetailResolver implements Resolve<Artist | void> {
       }
     }
 
-    this.router.navigateByUrl('/artists');
+    this.router.navigateByUrl(RouterPath.artists);
   }
 }

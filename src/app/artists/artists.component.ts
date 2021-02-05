@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Artist, Artists } from './artists';
+import { RouterPath } from '../core/models/router-paths';
 
 @Component({
   selector: 'app-artists',
@@ -9,6 +10,7 @@ import { Artist, Artists } from './artists';
 })
 export class ArtistsComponent implements OnInit {
   public artists: Map<string, Artist> = Artists;
+  public routerPath = RouterPath;
 
   constructor() { }
 
