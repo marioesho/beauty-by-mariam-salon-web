@@ -1,6 +1,7 @@
 .page-title-wrapper {
   padding: 15px 20px;
   background-color: rgba(3,3,3,.2);
+  margin: 20px;
 }
 
 .page-title {
@@ -9,14 +10,7 @@
   line-height: 1em;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  text-decoration: none;
   font-weight: 200;
-  font-style: normal;
-  max-width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
   margin: 0;
   color: white;
-  position: relative;
-  z-index: inherit;
 }
