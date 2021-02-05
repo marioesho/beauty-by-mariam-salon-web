@@ -15,7 +15,6 @@ export class SocialLinksComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.socialLinks);
   }
 
 }
