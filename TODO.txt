@@ -1,4 +1,2 @@
 - large screen breaks hours and pictures
-- no page found guard
 - create link to scheduling api
-- create better page not found
