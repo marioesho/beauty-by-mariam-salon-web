@@ -7,7 +7,7 @@ import { SalonServicesComponent } from '../../salon-services/salon-services.comp
 import { ArtistsComponent } from '../../artists/artists.component';
 import { ArtistDetailComponent } from '../../artists/artist-detail/artist-detail.component';
 import { ContactComponent } from '../../contact/contact.component';
-import { PathNotFoundComponent } from '../components/path-not-found/path-not-found.component';
+import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
 
 // Guards
 import { ArtistDetailResolver } from '../../artists/artist-detail/artist-detail.resolver';
@@ -24,7 +24,7 @@ const routes: Routes = [
     ]
   },
   { path: RouterPath.contact, component: ContactComponent },
-  { path: '**', component: PathNotFoundComponent }
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
