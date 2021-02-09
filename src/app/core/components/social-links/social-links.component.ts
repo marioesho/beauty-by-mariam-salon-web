@@ -9,7 +9,6 @@ import { DefaultSocialLinks, SocialLinks } from '../../models/social-links';
 })
 export class SocialLinksComponent implements OnInit {
   @Input() socialLinks?: SocialLinks = DefaultSocialLinks;
-  @Input() additionalClasses = '';
   @Input() hasContainer = false;
 
   constructor() { }
