@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+@import 'scrollbar';
 
 html, body {
   height: 100%;
+}
+
+body {
+  overflow: overlay;
 }
 
 .nav-padding {
