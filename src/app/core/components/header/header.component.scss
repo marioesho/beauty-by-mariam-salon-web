@@ -1,4 +1,8 @@
 :host ::ng-deep {
+  .navbar > div {
+    margin-left: auto;
+  }
+
   .nav-link {
     font-size: 12px;
     letter-spacing: 3px;
