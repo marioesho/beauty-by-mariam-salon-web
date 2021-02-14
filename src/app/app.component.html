@@ -1,4 +1,4 @@
-<div class="d-flex flex-column h-100">
+<div class="d-flex flex-column h-100" *ngIf="isScreenSupported; else screenNotSupported">
   <div class="header">
     <app-header></app-header>
   </div>
@@ -11,3 +11,11 @@
     <app-footer></app-footer>
   </div>
 </div>
+
+<ng-template #screenNotSupported>
+  <div class="d-flex flex-column h-100 justify-content-center">
+    <div class="alert alert-danger" role="alert" data-mdb-color="danger">
+      This screen size is not supported. Sorry, please try with another device with a larger screen. Thanks!
+    </div>
+  </div>
+</ng-template>
