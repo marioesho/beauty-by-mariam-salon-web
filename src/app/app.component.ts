@@ -17,6 +17,15 @@ export class AppComponent implements OnInit {
     this.screenSupportedCheck(event.target as Window);
   }
 
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const document = event.target as Document;
+    if (document.body.classList.contains('on-scrollbar') === false) {
+      document.body.classList.add('on-scrollbar');
+      setTimeout(() => document.body.classList.remove('on-scrollbar'), 1000);
+    }
+  }
+
   private screenSupportedCheck(currentWindow: Window = window): void {
     this.isScreenSupported = currentWindow.innerWidth < 250 ? false : true;
   }
