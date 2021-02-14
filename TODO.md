@@ -1,2 +1,1 @@
 - create link to scheduling api
-- smallest screen size is 250 width
