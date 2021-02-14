@@ -5,6 +5,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  overflow: overlay;
+}
+
 .nav-padding {
   padding-top: 100px;
 }
