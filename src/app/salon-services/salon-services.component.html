@@ -1,53 +1,80 @@
-<app-parallax pageTitle="Makeup Services" imageUrl="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg"></app-parallax>
-
-<div class="container container--Montserrat my-5">
+<div class="container container--Montserrat nav-padding my-3">
   <div class="row">
-    <div class="col-md-6 my-4">
-      <app-list heading="Hair" [listItems]="hairServices"></app-list>
-    </div>
-    <div class="col-md-6 my-4">
-      <app-list heading="Specialty Hair" [listItems]="specialtyHairServices"></app-list>
+    <div class="col">
+      <h1>Makeup Services</h1>
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <app-list heading="Hair" [listItems]="hairServices"></app-list>
+        </div>
+        <div class="col-md-6 my-4">
+          <app-list heading="Specialty Hair" [listItems]="specialtyHairServices"></app-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <app-list heading="Color" [listItems]="colorServices"></app-list>
+        </div>
+        <div class="col-md-6 my-4">
+          <app-list heading="Texture" [listItems]="textureServices"></app-list>
+        </div>
+      </div>
+      <div class="row">
+        <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 my-4">
-      <app-list heading="Color" [listItems]="colorServices"></app-list>
-    </div>
-    <div class="col-md-6 my-4">
-      <app-list heading="Texture" [listItems]="textureServices"></app-list>
-    </div>
-  </div>
-  <div class="row">
-    <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
-  </div>
-</div>
-
-<app-parallax pageTitle="Hair Services" imageUrl="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg"></app-parallax>
-
-<div class="container container--Montserrat my-5">
-  <div class="row">
-    <div class="col-md-6 my-4">
-      <app-list heading="Hair" [listItems]="hairServices"></app-list>
-    </div>
-    <div class="col-md-6 my-4">
-      <app-list heading="Specialty Hair" [listItems]="specialtyHairServices"></app-list>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 my-4">
-      <app-list heading="Color" [listItems]="colorServices"></app-list>
-    </div>
-    <div class="col-md-6 my-4">
-      <app-list heading="Texture" [listItems]="textureServices"></app-list>
+    <div class="col">
+      <h1>Hair Services</h1>
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <app-list heading="Hair" [listItems]="hairServices"></app-list>
+        </div>
+        <div class="col-md-6 my-4">
+          <app-list heading="Specialty Hair" [listItems]="specialtyHairServices"></app-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <app-list heading="Color" [listItems]="colorServices"></app-list>
+        </div>
+        <div class="col-md-6 my-4">
+          <app-list heading="Texture" [listItems]="textureServices"></app-list>
+        </div>
+      </div>
+      <div class="row">
+        <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+      </div>
     </div>
   </div>
   <div class="row">
-    <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+    <div class="col">
+      <h1>Brow Services</h1>
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <app-list heading="Hair" [listItems]="hairServices"></app-list>
+        </div>
+        <div class="col-md-6 my-4">
+          <app-list heading="Specialty Hair" [listItems]="specialtyHairServices"></app-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 my-4">
+          <app-list heading="Color" [listItems]="colorServices"></app-list>
+        </div>
+        <div class="col-md-6 my-4">
+          <app-list heading="Texture" [listItems]="textureServices"></app-list>
+        </div>
+      </div>
+      <div class="row">
+        <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+      </div>
+    </div>
   </div>
 </div>
 
 <ng-template #cancelTerms>
-  <span class="text-center mt-5 initialism px-5">
+  <span class="cancel-terms text-center initialism px-5">
     <p class="mb-2">
       WE APPRECIATE 24 HOUR NOTICE FOR CANCELING APPOINTMENTS.
     </p>

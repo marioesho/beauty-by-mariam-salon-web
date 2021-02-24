@@ -1,26 +1,28 @@
-<app-parallax pageTitle="Artists" imageUrl="https://mdbootstrap.com/img/Photos/Others/img%20%2844%29.jpg"></app-parallax>
-
-<div class="container container--Montserrat my-5">
-  <div class="row mb-3">
-    <div class="col">
-      <h1>Muse is defined as the source of inspiration for a creative artist.</h1>
-      <p>
-        All of our artists have endured extensive training and are extremely passionate. But it is their source of inspiration that makes the ultimate salon and spa experience possible, each and every day.
-      </p>
-      <p class="font-weight-bold">
-        Click below to get to know our artists and learn more about their Muse.
-      </p>
-    </div>
-  </div>
+<div class="container container--Montserrat nav-padding my-3">
   <div class="row">
     <div class="col">
-      <h4>Stylists</h4>
-      <div class="d-flex justify-content-center flex-wrap text-center">
-        <div *ngFor="let artist of artists | keyvalue">
-          <a [routerLink]="[routerPath.artistDetail, artist.key]">
-            <img [src]="artist.value.imageUrl" class="img-thumbnail artist-image">
-          </a>
-          <p>{{ artist.value.name }}</p>
+      <h1>Artists</h1>
+      <div class="row">
+        <div class="col my-4">
+          <p>
+            All of our artists have endured extensive training and are extremely passionate. But it is their source of inspiration that makes the ultimate salon and spa experience possible, each and every day.
+          </p>
+          <p class="font-weight-bold">
+            Click below to get to know our artists and learn more about their Muse.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>Stylists</h4>
+          <div class="d-flex justify-content-center flex-wrap text-center">
+            <div *ngFor="let artist of artists | keyvalue">
+              <a [routerLink]="[routerPath.artistDetail, artist.key]">
+                <img [src]="artist.value.imageUrl" class="img-thumbnail artist-image">
+              </a>
+              <p>{{ artist.value.name }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
