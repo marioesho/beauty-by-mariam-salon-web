@@ -1,10 +1,12 @@
-<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Hours</h5>
+<div class="container--Montserrat">
+  <h4 class="my-4">Hours</h4>
 
-<table mdbTable [borderless]="true" [small]="true" class="hours-table" [class]="additionalClasses">
-  <tbody>
-    <tr mdbTableCol *ngFor="let hour of hours">
-      <td class="pt-0 pl-0 text-left">{{hour.key}}</td>
-      <td class="pt-0 pr-0 text-right">{{hour.value}}</td>
-    </tr>
-  </tbody>
-</table>
+  <table mdbTable [borderless]="true" [small]="true" class="hours-table" [class]="additionalClasses">
+    <tbody>
+      <tr mdbTableCol *ngFor="let hour of hours">
+        <td class="pt-0 pl-0 text-left"><p>{{hour.key}}</p></td>
+        <td class="pt-0 pr-0 text-right"><p>{{hour.value}}</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
