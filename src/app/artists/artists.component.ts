@@ -18,4 +18,7 @@ export class ArtistsComponent implements OnInit {
     window.scroll(0, 0);
   }
 
+  asIsOrder(): number {
+    return 1;
+  }
 }
