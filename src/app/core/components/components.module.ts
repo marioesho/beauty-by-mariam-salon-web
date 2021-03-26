@@ -38,7 +38,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     LocationComponent,
     SocialLinksComponent,
     ParallaxComponent,
-    ListComponent
+    ListComponent,
+    CarouselComponent
   ]
 })
 export class ComponentsModule { }
