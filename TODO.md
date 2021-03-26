@@ -22,6 +22,6 @@ add brows to service page - done
 
 add showing work to artist details
 
-highlight page navbar links
+highlight page navbar links - done
 
-fix fonts, headers, paragraphs to be all similar and create a page layout
+fix fonts, headers, paragraphs to be all similar and create a page layout - done

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+@import 'font';
 @import 'scrollbar';
 
 html, body {
@@ -11,31 +11,4 @@ body {
 
 .nav-padding {
   padding-top: 100px;
-}
-
-.container--Montserrat h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
-.container--Montserrat h4 {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-}
-
-.container--Montserrat p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 0.75rem;
-  letter-spacing: 0.188rem;
-}
-
-.container--Montserrat a {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.quote {
-  font-family: 'Times New Roman','Times','serif';
-  font-size: 1.5em;
-  font-style: italic;
 }
