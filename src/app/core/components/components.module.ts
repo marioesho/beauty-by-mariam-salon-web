@@ -12,6 +12,7 @@ import { SocialLinksComponent } from './social-links/social-links.component';
 import { ParallaxComponent } from './parallax/parallax.component';
 import { ListComponent } from './list/list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SocialLinksComponent,
     ParallaxComponent,
     ListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
