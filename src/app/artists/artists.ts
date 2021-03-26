@@ -1,4 +1,5 @@
 import { SocialLinks, SocialMedia } from '../core/models/social-links';
+import { CarouselItem } from '../core/models/carousel-item';
 
 export class Artist {
   public imageUrl!: string;
@@ -6,6 +7,7 @@ export class Artist {
   public skills!: string;
   public socialLinks?: SocialLinks;
   public quote?: string;
+  public carousel?: CarouselItem[];
 }
 
 export const Artists: Map<string, Artist> = new Map([
@@ -16,10 +18,15 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Mariam Yelda',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
+      quote: 'I\'m a boss ass bitch!',
+      carousel: [
+        { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg', description: 'First Slide' } as CarouselItem,
+        { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg', description: 'Second Slide' } as CarouselItem,
+        { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg', description: 'Third Slide' } as CarouselItem
+      ]
     }
   ],
   [
@@ -29,8 +36,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Bailey',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -42,8 +49,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Carter',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -55,8 +62,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Gabrielle',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -68,8 +75,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Heather',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -81,8 +88,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Holly',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -94,8 +101,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Hollyanne',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -107,8 +114,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Jade',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -120,8 +127,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Jashley',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }
@@ -133,8 +140,8 @@ export const Artists: Map<string, Artist> = new Map([
       name: 'Javaneh',
       skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
       socialLinks: {
-        facebook: {link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: {link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
       } as SocialLinks,
       quote: 'I\'m a boss ass bitch!'
     }

@@ -1,0 +1,5 @@
+<mdb-carousel *ngIf="carousel" class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item *ngFor="let carouselItem of carousel">
+    <img class="d-block w-100" [src]="carouselItem.imageUrl" [alt]="carouselItem.description" class="img-thumbnail">
+  </mdb-carousel-item>
+</mdb-carousel>

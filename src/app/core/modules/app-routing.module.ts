@@ -16,6 +16,7 @@ import { ArtistDetailResolver } from '../../artists/artist-detail/artist-detail.
 import { RouterPath } from '../models/router-paths';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: RouterPath.home },
   { path: RouterPath.home, component: HomeComponent },
   { path: RouterPath.services, component: SalonServicesComponent },
   { path: RouterPath.artists, children: [

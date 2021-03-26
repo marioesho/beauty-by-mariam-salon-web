@@ -1,4 +1,4 @@
-<div class="container container--Montserrat nav-padding">
+<div class="container nav-padding">
   <hr class="mb-4">
   <div class="row text-center">
     <div class="col-xl-7 mb-5 mb-xl-0">
@@ -12,7 +12,7 @@
       </div>
       <div class="row mb-5">
         <div class="col">
-          <p>{{ artist.skills }}</p>
+          <p class="mb-0">{{ artist.skills }}</p>
         </div>
       </div>
       <div class="row justify-content-center mb-5">
@@ -20,9 +20,14 @@
           <app-social-links [socialLinks]="artist.socialLinks" [hasContainer]="true"></app-social-links>
         </div>
       </div>
-      <div class="row" *ngIf="artist.quote">
+      <div class="row mb-5" *ngIf="artist.quote">
         <div class="col">
-          <p class="quote">“{{ artist.quote }}”</p>
+          <p class="quote mb-0">“{{ artist.quote }}”</p>
+        </div>
+      </div>
+      <div class="row" *ngIf="artist.carousel">
+        <div class="col">
+          <app-carousel [carousel]="artist.carousel"></app-carousel>
         </div>
       </div>
     </div>
