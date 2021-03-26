@@ -1,5 +1,5 @@
 export const RouterPath = {
-  home: '',
+  home: 'home',
   services: 'services',
   artists: 'artists',
   artistDetail: 'artist-detail',
