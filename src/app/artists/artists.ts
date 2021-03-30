@@ -10,140 +10,95 @@ export class Artist {
   public carousel?: CarouselItem[];
 }
 
+/* Example Map
+[
+  'mariamYelda',
+  {
+    imageUrl: '../../assets/images/artist-1.jpg',
+    name: 'Mariam Yelda',
+    skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+    socialLinks: {
+      facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
+      instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
+    } as SocialLinks,
+    quote: 'I\'m a boss ass bitch!',
+    carousel: [
+      { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg', description: 'First Slide' } as CarouselItem,
+      { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg', description: 'Second Slide' } as CarouselItem,
+      { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg', description: 'Third Slide' } as CarouselItem
+    ]
+  }
+] */
+
 export const Artists: Map<string, Artist> = new Map([
   [
     'mariamYelda',
     {
       imageUrl: '../../assets/images/artist-1.jpg',
       name: 'Mariam Yelda',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+      skills: 'Makeup Artist',
       socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!',
-      carousel: [
-        { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg', description: 'First Slide' } as CarouselItem,
-        { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg', description: 'Second Slide' } as CarouselItem,
-        { imageUrl: 'https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg', description: 'Third Slide' } as CarouselItem
-      ]
+        instagram: { link: 'https://www.instagram.com/beautybymariam/', description: '@beautybymariam' } as SocialMedia,
+        twitter: { link: 'https://twitter.com/mariamyelda', description: '@mariamyelda' } as SocialMedia,
+        pinterest: { link: 'https://www.pinterest.com/mariamyelda', description: '@mariamyelda' } as SocialMedia
+      } as SocialLinks
     }
   ],
   [
-    'Bailey',
+    'nitaShekreli',
     {
       imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Bailey',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+      name: 'Nita Shekreli',
+      skills: 'Makeup Artist',
       socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
+        instagram: { link: 'https://www.instagram.com/makeupbynita/', description: '@makeupbynita' } as SocialMedia,
+        twitter: { link: 'https://twitter.com/makeup_bynita', description: '@makeup_bynita' } as SocialMedia
+      } as SocialLinks
     }
   ],
   [
-    'Carter',
+    'meaganHana',
     {
       imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Carter',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+      name: 'Meagan Hana',
+      skills: 'Makeup Artist',
       socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
+        instagram: { link: 'https://www.instagram.com/makeupbabe_meagan/', description: '@makeupbabe_meagan' } as SocialMedia,
+        facebook: { link: 'https://www.facebook.com/meaganhanamakeup', description: '@meaganhanamakeup' } as SocialMedia
+      } as SocialLinks
     }
   ],
   [
-    'Gabrielle',
+    'lindaShamoun',
     {
       imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Gabrielle',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+      name: 'Linda Shamoun',
+      skills: 'Hair Stylist / Makeup Artist',
       socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
+        instagram: { link: 'https://www.instagram.com/beautybylinda__/', description: '@beautybylinda__' } as SocialMedia
+      } as SocialLinks
     }
   ],
   [
-    'Heather',
+    'jenClay',
     {
       imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Heather',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+      name: 'Jen Clay',
+      skills: 'Hair Stylist',
       socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
+        instagram: { link: 'https://www.instagram.com/beautybyjenclay/', description: '@beautybyjenclay' } as SocialMedia
+      } as SocialLinks
     }
   ],
   [
-    'Holly',
+    'sueBakkal',
     {
       imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Holly',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
+      name: 'SueBakkal',
+      skills: 'Hair Stylist',
       socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
-    }
-  ],
-  [
-    'Hollyanne',
-    {
-      imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Hollyanne',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
-    }
-  ],
-  [
-    'Jade',
-    {
-      imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Jade',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
-    }
-  ],
-  [
-    'Jashley',
-    {
-      imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Jashley',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
-    }
-  ],
-  [
-    'Javaneh',
-    {
-      imageUrl: '../../assets/images/artist-1.jpg',
-      name: 'Javaneh',
-      skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
-      socialLinks: {
-        facebook: { link: 'https://www.facebook.com/Beautybymariam1' } as SocialMedia,
-        instagram: { link: 'https://www.instagram.com/beautybymariamsalon/?hl=en' } as SocialMedia
-      } as SocialLinks,
-      quote: 'I\'m a boss ass bitch!'
+        instagram: { link: 'https://www.instagram.com/stylesbysuesue/', description: '@stylesbysuesue' } as SocialMedia
+      } as SocialLinks
     }
   ]
 ]);
