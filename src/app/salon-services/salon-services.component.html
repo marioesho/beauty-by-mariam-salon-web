@@ -18,9 +18,6 @@
           <app-list heading="Texture" [listItems]="textureServices"></app-list>
         </div>
       </div>
-      <div class="row">
-        <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
-      </div>
     </div>
   </div>
   <div class="row">
@@ -41,9 +38,6 @@
         <div class="col-md-6 my-4">
           <app-list heading="Texture" [listItems]="textureServices"></app-list>
         </div>
-      </div>
-      <div class="row">
-        <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
       </div>
     </div>
   </div>
@@ -67,20 +61,22 @@
         </div>
       </div>
       <div class="row">
-        <ng-template [ngTemplateOutlet]="cancelTerms"></ng-template>
+        <span class="cancel-terms text-center initialism px-5">
+          <!-- <p class="mb-2">
+            WE APPRECIATE 24 HOUR NOTICE FOR CANCELING APPOINTMENTS.
+          </p>
+          <p>
+            IF APPOINTMENT IS CANCELED LESS THAN 24 HOURS IN ADVANCE, WE WILL CHARGE 50% OF THE SCHEDULED SERVICE TOTAL.
+            ALL SERVICES OVER $150 REQUIRE A CREDIT CARD NUMBER.
+          </p> -->
+          <p class="mb-2">
+            We appreciate 24 hour notice for canceling appointments.
+          </p>
+          <p>
+            Cancellations will be charged in full amount. Credit cards will be held on file and changed the amount per appointment.
+          </p>
+        </span>
       </div>
     </div>
   </div>
 </div>
-
-<ng-template #cancelTerms>
-  <span class="cancel-terms text-center initialism px-5">
-    <p class="mb-2">
-      WE APPRECIATE 24 HOUR NOTICE FOR CANCELING APPOINTMENTS.
-    </p>
-    <p>
-      IF APPOINTMENT IS CANCELED LESS THAN 24 HOURS IN ADVANCE, WE WILL CHARGE 50% OF THE SCHEDULED SERVICE TOTAL.
-      ALL SERVICES OVER $150 REQUIRE A CREDIT CARD NUMBER.
-    </p>
-  </span>
-</ng-template>
