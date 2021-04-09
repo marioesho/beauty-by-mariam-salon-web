@@ -1,8 +1,8 @@
 <div *ngIf="window.innerWidth < 600; else desktop">
-  <app-parallax [pageTitle]="pageTitle" [imageUrl]="mobileImageUrl"></app-parallax>
+  <app-parallax [imageUrl]="mobileImageUrl"></app-parallax>
 </div>
 <ng-template #desktop>
-  <app-parallax [pageTitle]="pageTitle" [imageUrl]="desktopImageUrl"></app-parallax>
+  <app-parallax [imageUrl]="desktopImageUrl"></app-parallax>
 </ng-template>
 
 <!-- <div class="container my-5">

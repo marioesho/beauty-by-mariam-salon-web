@@ -9,7 +9,7 @@ declare var jarallax: any;
   styleUrls: ['./parallax.component.scss']
 })
 export class ParallaxComponent implements OnInit, AfterViewInit {
-  @Input() pageTitle!: string;
+  @Input() pageTitle?: string;
   @Input() imageUrl!: string;
 
   constructor() { }
