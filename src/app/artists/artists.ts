@@ -14,7 +14,7 @@ export class Artist {
 [
   'mariamYelda',
   {
-    imageUrl: '/assets/images/artist-1.jpg',
+    imageUrl: 'assets/images/artist-1.jpg',
     name: 'Mariam Yelda',
     skills: 'STYLIST / COLORIST / MAKEUP ARTIST / EXTENSION ARTIST',
     socialLinks: {
@@ -34,7 +34,7 @@ export const Artists: Map<string, Artist> = new Map([
   [
     'mariamYelda',
     {
-      imageUrl: '/assets/images/artist-1.jpg',
+      imageUrl: 'assets/images/artist-1.jpg',
       name: 'Mariam Yelda',
       skills: 'Makeup Artist',
       socialLinks: {
@@ -47,7 +47,7 @@ export const Artists: Map<string, Artist> = new Map([
   [
     'nitaShekreli',
     {
-      imageUrl: '/assets/images/artist-1.jpg',
+      imageUrl: 'assets/images/artist-1.jpg',
       name: 'Nita Shekreli',
       skills: 'Makeup Artist',
       socialLinks: {
@@ -59,7 +59,7 @@ export const Artists: Map<string, Artist> = new Map([
   [
     'meaganHana',
     {
-      imageUrl: '/assets/images/artist-1.jpg',
+      imageUrl: 'assets/images/artist-1.jpg',
       name: 'Meagan Hana',
       skills: 'Makeup Artist',
       socialLinks: {
@@ -71,7 +71,7 @@ export const Artists: Map<string, Artist> = new Map([
   [
     'lindaShamoun',
     {
-      imageUrl: '/assets/images/artist-1.jpg',
+      imageUrl: 'assets/images/artist-1.jpg',
       name: 'Linda Shamoun',
       skills: 'Hair Stylist / Makeup Artist',
       socialLinks: {
@@ -82,7 +82,7 @@ export const Artists: Map<string, Artist> = new Map([
   [
     'jenClay',
     {
-      imageUrl: '/assets/images/artist-1.jpg',
+      imageUrl: 'assets/images/artist-1.jpg',
       name: 'Jen Clay',
       skills: 'Hair Stylist',
       socialLinks: {
@@ -93,7 +93,7 @@ export const Artists: Map<string, Artist> = new Map([
   [
     'sueBakkal',
     {
-      imageUrl: '/assets/images/artist-1.jpg',
+      imageUrl: 'assets/images/artist-1.jpg',
       name: 'SueBakkal',
       skills: 'Hair Stylist',
       socialLinks: {
