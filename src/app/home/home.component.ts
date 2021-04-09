@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public window: Window = window;
+  public pageTitle = 'This is Sparta!';
+  public desktopImageUrl = '/assets/images/home-desktop.jpg';
+  public mobileImageUrl = '/assets/images/home-mobile.jpg';
 
   constructor() { }
 
   ngOnInit(): void {
     window.scroll(0, 0);
   }
-
 }
