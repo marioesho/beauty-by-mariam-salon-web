@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { MdbBootstrapModule } from '../modules/mdb-bootstrap.module';
 
+import { AuthComponent } from './auth/auth.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HoursComponent } from './hours/hours.component';
@@ -16,6 +17,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
+    AuthComponent,
     HeaderComponent,
     FooterComponent,
     HoursComponent,

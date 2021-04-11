@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Components
+import { AuthComponent } from '../components/auth/auth.component';
 import { HomeComponent } from '../../home/home.component';
 import { SalonServicesComponent } from '../../salon-services/salon-services.component';
 import { ArtistsComponent } from '../../artists/artists.component';
@@ -9,7 +10,8 @@ import { ArtistDetailComponent } from '../../artists/artist-detail/artist-detail
 import { ContactComponent } from '../../contact/contact.component';
 import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
 
-// Guards
+// Reesolvers
+import { AuthResolver } from '../resolvers/auth.resolver';
 import { ArtistDetailResolver } from '../../artists/artist-detail/artist-detail.resolver';
 
 // Models
@@ -17,6 +19,7 @@ import { RouterPath } from '../models/router-paths';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: RouterPath.home },
+  { path: 'auth', component: AuthComponent, resolve: [AuthResolver] },
   { path: RouterPath.home, component: HomeComponent },
   { path: RouterPath.services, component: SalonServicesComponent },
   { path: RouterPath.artists, children: [
