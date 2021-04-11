@@ -4,7 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { MdbBootstrapModule } from '../modules/mdb-bootstrap.module';
 
-import { AuthComponent } from './auth/auth.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HoursComponent } from './hours/hours.component';
@@ -14,10 +13,10 @@ import { ParallaxComponent } from './parallax/parallax.component';
 import { ListComponent } from './list/list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
-    AuthComponent,
     HeaderComponent,
     FooterComponent,
     HoursComponent,
@@ -29,6 +28,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     CarouselComponent
   ],
   imports: [
+    AuthModule,
     CommonModule,
     RouterModule,
     MdbBootstrapModule

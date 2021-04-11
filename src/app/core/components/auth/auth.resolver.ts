@@ -2,22 +2,28 @@ import { Injectable } from '@angular/core';
 import {
   Resolve,
   RouterStateSnapshot,
-  ActivatedRouteSnapshot
+  ActivatedRouteSnapshot,
+  Router
 } from '@angular/router';
-import { InstagramUser } from '../../models/instagram-user';
 
 import { AuthService } from './auth.service';
+import { RouterPath } from '../../models/router-paths';
+import { TokenService } from '../../services/token.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class AuthResolver implements Resolve<void> {
-  constructor(private authService: AuthService) {}
+  constructor(
+    private authService: AuthService,
+    private tokenService: TokenService,
+    private router: Router) { }
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): void {
+  async resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<void> {
     const instagramAuthCode = route.queryParamMap.get('code');
     if (instagramAuthCode) {
-      this.authService.getInstagramUser(instagramAuthCode).subscribe(x => this.authService.storeInstagramUser(new InstagramUser(x)));
+      const instagramToken = (await this.authService.getInstagramAccess(instagramAuthCode).toPromise()).access_token;
+      this.tokenService.storeInstagramToken(instagramToken);
     }
+
+    this.router.navigateByUrl(RouterPath.home);
   }
 }
