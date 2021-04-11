@@ -11,7 +11,7 @@ import { ContactComponent } from '../../contact/contact.component';
 import { PageNotFoundComponent } from '../components/page-not-found/page-not-found.component';
 
 // Reesolvers
-import { AuthResolver } from '../resolvers/auth.resolver';
+import { AuthResolver } from '../components/auth/auth.resolver';
 import { ArtistDetailResolver } from '../../artists/artist-detail/artist-detail.resolver';
 
 // Models

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CoreModule } from './core/core.module';
 import { ArtistsModule } from './artists/artists.module';
@@ -16,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
+    HttpClientModule,
     CoreModule,
     ArtistsModule
   ],

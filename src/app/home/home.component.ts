@@ -14,5 +14,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     window.scroll(0, 0);
+    this.authorizeUser();
+  }
+
+  private authorizeUser(): void {
+    if (!localStorage.getItem('instagramUser')) {
+      window.location.href = 'https://api.instagram.com/oauth/authorize?client_id=495775344799163&redirect_uri=https://localhost:4200/auth/&scope=user_profile,user_media&response_type=code';
+    }
   }
 }
