@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   private getAuthTokens(): void {
     if (!this.tokenService.hasInstagramToken) {
-      window.location.href = 'https://api.instagram.com/oauth/authorize?client_id=495775344799163&redirect_uri=https://localhost:4200/auth/&scope=user_profile,user_media&response_type=code';
+      window.location.href = 'https://api.instagram.com/oauth/authorize?client_id=667303191055661&redirect_uri=https://localhost:4200/auth&scope=user_profile,user_media&response_type=code';
     }
   }
 }
