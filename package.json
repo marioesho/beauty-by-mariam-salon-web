@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:deployment": "ng build --configuration production --base-href 'https://mesho.github.io/beauty-by-mariam-salon-web/'"
+    "build:prod": "ng build --configuration production --base-href \"beauty-by-mariam-salon-web\"",
+    "deploy:prod": "ngh"
   },
   "private": true,
   "dependencies": {
