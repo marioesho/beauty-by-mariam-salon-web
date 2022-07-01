@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:deployment": "ng build --configuration production --output-path wwwroot --base-href 'https://mesho.github.io/beauty-by-mariam-salon-web/'"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +36,7 @@
     "@types/jquery": "^3.5.14",
     "@types/lodash": "^4.14.168",
     "@types/node": "^12.20.4",
+    "angular-cli-ghpages": "^1.0.0",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
