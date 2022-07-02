@@ -8,47 +8,27 @@ on:
     branches:
       - setup-gh-pages
 
-# jobs:
-#   build:
-
-#     runs-on: ubuntu-latest
-
-#     strategy:
-#       matrix:
-#         node-version: [16.14.2]
-
-#     steps:
-#     - uses: actions/checkout@v3
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v3
-#       with:
-#         node-version: ${{ matrix.node-version }}
-#         cache: 'npm'
-#     - run: npm run install:prod
-#     - run: npm run build:prod
-#     - run: npm run deploy:prod
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
+      uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: '16.14.2'
-    - uses: actions/cache@v1
+    - uses: actions/cache@v3
       with:
         path: ~/.npm
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
+    - name: Install Dependencies
+      run: npm run install:prod
     - name: Build
-      run: |
-        npm run install:prod
-        npm run build:prod
+      run: npm run build:prod
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
