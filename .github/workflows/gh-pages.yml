@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - main
-      - fix-404
 
 jobs:
   build-and-deploy:
