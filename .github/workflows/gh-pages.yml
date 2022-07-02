@@ -45,8 +45,8 @@ jobs:
           ${{ runner.os }}-node-
     - name: Build
       run: |
-        npm run install:deployment
-        npm run build:deployment
+        npm run install:prod
+        npm run build:prod
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
