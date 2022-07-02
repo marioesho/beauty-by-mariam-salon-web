@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "install:prod": "npm install --no-progress",
-    "build:prod": "ng build --configuration production --base-href \"beauty-by-mariam-salon-web\"",
-    "deploy:prod": "ngh"
+    "build:prod": "ng build --configuration production --base-href=/beauty-by-mariam-salon-web/"
   },
   "private": true,
   "dependencies": {
@@ -38,7 +37,6 @@
     "@types/jquery": "^3.5.14",
     "@types/lodash": "^4.14.168",
     "@types/node": "^12.20.4",
-    "angular-cli-ghpages": "^1.0.0",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
