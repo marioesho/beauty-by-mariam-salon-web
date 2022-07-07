@@ -13,6 +13,7 @@ import { ParallaxComponent } from './parallax/parallax.component';
 import { ListComponent } from './list/list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     CarouselComponent
   ],
   imports: [
+    AuthModule,
     CommonModule,
     RouterModule,
     MdbBootstrapModule
